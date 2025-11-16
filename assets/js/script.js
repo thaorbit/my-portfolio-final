@@ -59,24 +59,34 @@ $(document).ready(function () {
 document.addEventListener('visibilitychange',
     function () {
         if (document.visibilityState === "visible") {
-            document.title = "Portfolio | Jigar Sable";
-            $("#favicon").attr("href", "assets/images/favicon.png");
+            document.title = "Portfolio | Thao Nguyen";
+            $("#favicon").attr("href", "./assets/images/hp-img.jpg");
         }
         else {
-            document.title = "Come Back To Portfolio";
-            $("#favicon").attr("href", "assets/images/favhand.png");
+            document.title = "Welcome to My Portfolio";
+            $("#favicon").attr("href", "./assets/images/hp-img.jpg");
         }
     });
 
 
 // <!-- typed js effect starts -->
 var typed = new Typed(".typing-text", {
-    strings: ["frontend development", "backend development", "web designing", "android development", "web development"],
-    loop: true,
-    typeSpeed: 50,
-    backSpeed: 25,
-    backDelay: 500,
+    strings: [
+        "Frontend Development", 
+        "Web designing", 
+        "AI Engineering", 
+        "Web Development", 
+        "Computer Vision", 
+        "Reinforcement Learning"
+    ],
+    loop: true,        // lặp vô hạn
+    typeSpeed: 60,     // tốc độ gõ chữ
+    backSpeed: 30,     // tốc độ xóa chữ
+    backDelay: 1000,   // thời gian dừng sau khi gõ xong 1 từ (ms)
+    startDelay: 500,   // delay trước khi bắt đầu gõ
+    smartBackspace: true // chỉ xóa khác biệt giữa 2 từ liên tiếp
 });
+
 // <!-- typed js effect ends -->
 
 async function fetchData(type = "skills") {
