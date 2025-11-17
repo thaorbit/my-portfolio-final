@@ -972,7 +972,9 @@ header .navbar ul li a:hover {
 }
 .contact span{
   color: #FFD66B;
-   
+}
+.contact h2{
+  color: #ffffff; 
 }
 
 /* ========== Box Container ========== */
