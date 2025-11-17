@@ -50,9 +50,13 @@
     </a>
     <div class="socials">
         <ul class="social-icons">
-          <li><a class="linkedin" aria-label="LinkedIn" href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li> 
-          <li><a class="github" aria-label="GitHub" href="#" target="_blank"><i class="fab fa-github"></i></a></li>
-          <li><a class="telegram" aria-label="Telegram" href="#" target="_blank"><i class="fab fa-telegram-plane"></i></a></li>
+          <!-- <li><a class="linkedin" aria-label="LinkedIn" href="#" target="_blank"><i class="fab fa-linkedin"></i></a></li>  -->
+          <li><a class="github" aria-label="GitHub" href="https://github.com/thaorbit" target="_blank"><i class="fab fa-github"></i></a></li>
+          <li>
+            <a class="gmail" aria-label="Gmail" href="mailto:enfance2005@gmail.com" target="_blank">
+              <i class="fas fa-envelope"></i>
+            </a>
+          </li>
         </ul>
       </div>
     </div>
@@ -70,13 +74,12 @@
     <div class="content">
         <h3>I'm Thảo</h3>
         <span class="tag">AI Engineer</span>
-        
-        <p> I am a Software Engineering graduate discovering my path in Artificial Intelligence.
-           I’m fascinated by how machines see the world (Computer Vision) and how they learn 
-           through interactions (Reinforcement Learning). Even though my AI background is not 
-           strong yet, I’m constantly learning, experimenting, and turning ideas into small 
-           projects that help me grow step by step. I aim to become an AI Engineer who can build 
-           meaningful, real-world AI applications driven by curiosity and continuous improvement. </p>
+        <p>
+          I am a Software Engineering graduate exploring my path in Artificial Intelligence. 
+          I’m deeply interested in how machines interpret the world through Computer Vision and how they learn through interactions in Reinforcement Learning. 
+          Although my AI background is still developing, I’m constantly learning, experimenting, and building small projects that help me grow step by step. 
+          My goal is to become an AI Engineer capable of creating meaningful, real-world AI applications driven by curiosity, discipline, and continuous improvement.
+        </p>
         <div class="box-container">
             <div class="box">
               <p><span> email : </span> enfance2005@gmail.com</p>
@@ -161,10 +164,12 @@
       <img draggable="false" src="./assets/images/projects/california.jpg" alt="House Price Prediction" />
       <div class="content">
         <div class="tag">
-          <h3>House Price Prediction (Random Forest)</h3>
+          <h3>House Price Prediction</h3>
         </div>
         <div class="desc">
-          <p>Predicts housing prices using multiple features with <strong>Random Forest Regressor</strong> in Python (scikit-learn).</p>
+          <p>
+          Random Forest model predicting California housing prices using income, rooms, and location features. Includes preprocessing, feature encoding, and evaluation with R², MAE, RMSE, and MSE.
+          </p>
           <div class="btns">
             <a href="https://github.com/thaorbit/house-price-prediction-Random-forest-Regressor" class="btn" target="_blank">
               <i class="fas fa-eye"></i> Details
@@ -179,10 +184,12 @@
       <img draggable="false" src="./assets/images/projects/mnist.png" alt="MNIST Handwriting Recognition" />
       <div class="content">
         <div class="tag">
-          <h3>MNIST Handwriting Classification</h3>
+          <h3>MNIST Digit Classifier</h3>
         </div>
         <div class="desc">
-          <p>Deep learning model classifying handwritten digits from the MNIST dataset using <strong>TensorFlow/Keras</strong>.</p>
+          <p>
+          CNN classifying MNIST handwritten digits with 3 Conv2D layers, MaxPooling, Flatten, and 2 Dense layers. Trained with Sparse Categorical Crossentropy and Adam optimizer. Test accuracy ~97%.
+          </p>
           <div class="btns">
             <a href="https://github.com/thaorbit/handwritting-digit-recognition-MNIST" class="btn" target="_blank">
               <i class="fas fa-eye"></i> Details
@@ -197,10 +204,13 @@
       <img draggable="false" src="./assets/images/projects/face-recognition.png" alt="Face Recognition (Cosine Similarity)" />
       <div class="content">
         <div class="tag">
-          <h3>Facial Recognition (Cosine Similarity)</h3>
+          <h3>Facial Recognition</h3>
         </div>
         <div class="desc">
-          <p>Lightweight facial recognition system using <strong>cosine similarity</strong> between embeddings for identity verification.</p>
+          <p>
+          Realtime face recognition using MTCNN for detection and FaceNet (InceptionResNetV1) for feature extraction. Face embeddings are compared with a normalized database using cosine similarity to identify students, labeling them or marking as Unknown if similarity is below threshold. Implemented with webcam input, bounding boxes, and live confidence scores.
+          </p>
+
           <!-- <div class="btns">
             <a href="#" class="btn" target="_blank">
               <i class="fas fa-eye"></i> Details
@@ -215,10 +225,12 @@
       <img draggable="false" src="./assets/images/projects/attendance.jpg" alt="Attendance Face System" />
       <div class="content">
         <div class="tag">
-          <h3>Attendance Monitoring System (Face Recognition)</h3>
+          <h3>Attendance System</h3>
         </div>
         <div class="desc">
-          <p>Developed with a team of 4 for <strong>Techwiz contest</strong>; includes face recognition, anti-spoofing, and a supporting website.</p>
+          <p>
+          AI-powered attendance system developed by a team of 4 for Techwiz contest. Faces are detected with MTCNN, features extracted using InceptionResNetV1 (FaceNet), and embeddings matched via FAISS for fast and accurate identification. Includes a web app for managing student profiles, tracking attendance, and real-time synchronization.
+          </p>
           <!-- <div class="btns">
             <a href="#" class="btn" target="_blank">
               <i class="fas fa-eye"></i> Details
@@ -233,10 +245,12 @@
       <img draggable="false" src="./assets/images/projects/content-based.jpg" alt="Movie Recommender (Content-Based)" />
       <div class="content">
         <div class="tag">
-          <h3>Movie Recommender (Content-Based Filtering)</h3>
+          <h3>Movie Recommender</h3>
         </div>
         <div class="desc">
-          <p>Recommends movies based on metadata similarity using <strong>content-based filtering</strong> in Python.</p>
+          <p>
+          Recommends similar movies using tags derived from genres, keywords, cast, crew, and descriptions. Uses CountVectorizer and cosine similarity to generate top-N recommendations.
+          </p>
           <div class="btns">
             <a href="https://github.com/thaorbit/movie-recommender-system" class="btn" target="_blank">
               <i class="fas fa-eye"></i> Details
@@ -251,10 +265,13 @@
       <img draggable="false" src="./assets/images/projects/hybrid.png" alt="Hybrid Recommender System" />
       <div class="content">
         <div class="tag">
-          <h3>Hybrid Movie Recommender (CF + Content-Based)</h3>
+          <h3>Hybrid Movie Recommender</h3>
         </div>
         <div class="desc">
-          <p>Developed by <strong>2 team members</strong>; hybrid recommender combining <strong>content-based filtering</strong> and <strong>user-based CF (KMeans + KNN)</strong></p>
+          <p>
+          Hybrid movie recommender developed by two members, combining Collaborative Filtering (K-Means + KNN with Adjusted Cosine Similarity) and Content-Based Filtering (genre profiles). The hybrid model balances user behavior and content features to generate more accurate movie suggestions.
+          </p>
+
           <div class="btns">
             <a href="https://github.com/Uyen211/Hybrid-recommendation-system-movie" class="btn" target="_blank">
               <i class="fas fa-eye"></i> Details
@@ -279,11 +296,17 @@
     <div class="container right">
       <div class="content">
         <div class="tag">
-          <h2>Self Employed</h2>
+          <h2>Independent Projects</h2>
         </div>
         <div class="desc">
-            <h3>AI Engineer</h3>
+            <h3>AI/ML Engineer (Self-Learning)</h3>
             <p>Sept 2025 - Present</p>
+            <p>
+              Focused on Machine Learning, Deep Learning, and Computer Vision. 
+              Developed AI-centered projects, from data preprocessing and model training 
+              to evaluation and deployment. Strengthened core engineering skills through 
+              hands-on experimentation and building real-world applications.
+            </p>
         </div>
       </div>
     </div>
@@ -291,6 +314,8 @@
   </div>
 
 </section>
+
+
 <!-- experience section ends -->
 
 <!-- contact section starts -->
@@ -357,7 +382,7 @@
       <p> <i class="fas fa-envelope"></i> enfance2005@gmail.com</p>
       <p> <i class="fas fa-map-marked-alt"></i> Hanoi, Vietnam</p>
       <div class="share">
-        <a href="#" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a>
+        <!-- <a href="#" class="fab fa-linkedin" aria-label="LinkedIn" target="_blank"></a> -->
         <a href="https://github.com/thaorbit" class="fab fa-github" aria-label="GitHub" target="_blank"></a>
         <a href="mailto:enfance2005@gmail.com" class="fas fa-envelope" aria-label="Mail" target="_blank"></a>
         <!-- <a href="https://twitter.com/jigar_sable" class="fab fa-twitter" aria-label="Twitter" target="_blank"></a> -->

@@ -64,6 +64,7 @@ header {
   top: 0;
   left: 0;
   right: 0;
+  height: 80px;
   z-index: 1000;
   display: flex;
   align-items: center;
@@ -134,7 +135,7 @@ header .navbar ul li a {
 header .navbar ul li a.active,
 header .navbar ul li a:hover {
   color: #66bea9;;
-  border-bottom: 0.2rem solid #FFD63A;
+  border-bottom: 0.2rem solid #66bea9;
   padding: 0.5rem 0;
 }
 /* navbar ends */
@@ -203,6 +204,7 @@ header .navbar ul li a:hover {
   min-height: 100vh;
   align-items: center;
   background-color: #8CE4FF;
+  padding-top: 80px; 
 }
 .home #particles-js {
   position: absolute;
@@ -399,10 +401,14 @@ header .navbar ul li a:hover {
   font-size: 2.5rem;
 }
 .about .row .content .tag {
+  display: inline-block;
   font-size: 1.4rem;
-  color: #020133;
+  color: #2d2e32;
   font-weight: 600;
   margin-top: 1rem;
+  padding: 6px 14px;
+  background: rgba(108, 92, 231, 0.15); /* tím nhạt */
+  border-radius: 6px;
 }
 .about .row .content p {
   font-size: 1.5rem;
@@ -555,12 +561,16 @@ header .navbar ul li a:hover {
   background: #FF8F8F;
   min-height: 80vh;
 }
+.education span {
+  color: #3a7839;
+}
 .education .qoute {
   font-size: 1.5rem;
   text-align: center;
   font-family: "Nunito", sans-serif;
   font-weight: 600;
   margin-top: 0.5rem;
+  font-weight: 700;
 }
 .education .box-container {
   display: flex;
@@ -721,7 +731,7 @@ header .navbar ul li a:hover {
   justify-content: center;
 }
 .work .desc p {
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 .work .desc .btns {
   display: flex;
@@ -959,6 +969,10 @@ header .navbar ul li a:hover {
     background:#E893CF;
   min-height: 60vh;
   padding: 4rem 0;
+}
+.contact span{
+  color: #FFD66B;
+   
 }
 
 /* ========== Box Container ========== */
@@ -1360,4 +1374,41 @@ form .button-area {
   .footer .box-container .box .share a {
     padding: 1.2rem;
   }
+}
+
+/* Vị trí cố định */
+#scroll-top {
+    position: fixed;
+    bottom: 2rem;
+    right: 2rem;
+    z-index: 1000;
+
+    /* Kích thước & màu sắc */
+    width: 45px;
+    height: 45px;
+    background: #007E6E;  
+    color: #F1F3E0;
+    font-size: 22px;
+    line-height: 45px;
+    text-align: center;
+    border-radius: 50%;
+
+    /* Ẩn mặc định */
+    opacity: 0;
+    pointer-events: none;
+    transform: scale(0.8);
+    transition: 0.3s ease;
+}
+
+/* Hiện lên khi active */
+#scroll-top.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: scale(1);
+}
+
+/* Hiệu ứng hover */
+#scroll-top:hover {
+    background: #D2DCB6;
+    transform: scale(1.15);
 }
